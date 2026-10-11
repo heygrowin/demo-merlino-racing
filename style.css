@@ -1,0 +1,115 @@
+/* Merlino Racing — officina meccanica & elettrauto. Graphite + racing red. */
+:root{
+  --ink:#232a30;--muted:#5d6871;--bg:#f5f7f8;--bg2:#e9eef1;
+  --blue:#2b2f36;--blue-dark:#20242b;--accent:#b5271b;--accent-dark:#a8241a;
+  --line:#d7e0e3;--white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",system-ui,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 18px}
+img{max-width:100%;display:block}
+a{color:var(--accent-dark)}
+h1,h2,h3,h4{margin:0 0 .4em;line-height:1.2;font-weight:700}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip:focus{position:static;width:auto;height:auto;clip:auto;display:inline-block;padding:8px;background:#b5271b;color:#fff}
+
+.link-banner{background:var(--blue-dark);color:#e6eef2;text-align:center;font-size:.86rem;padding:9px 14px}
+.link-banner b{color:#fff}
+
+.top{position:sticky;top:0;z-index:50;background:var(--blue);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.14)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem}
+.brand small{display:block;font-weight:400;font-size:.72rem;color:#cbdae1;letter-spacing:.02em}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:38px;border-radius:9px;background:var(--accent);color:#fff;font-weight:800;flex:0 0 auto;font-size:.82rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:48px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;cursor:pointer;border:2px solid transparent;font-size:1rem;font-family:inherit}
+.btn-accent{background:#b5271b;color:#fff;border-color:#b5271b}
+.btn-accent:hover{background:#981f15;border-color:#981f15}
+.btn-ghost{background:#fff;color:var(--blue-dark);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent)}
+.btn-sm{min-height:44px;padding:8px 16px;font-size:.88rem}
+.btn-wide{width:100%}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+
+section{padding:46px 0}
+.band-soft{background:var(--bg2)}
+.section-title{font-size:1.7rem;color:var(--blue-dark)}
+.section-sub{color:var(--muted);margin:0 0 20px;max-width:62ch}
+
+.hero{background:linear-gradient(160deg,var(--blue) 0%,var(--blue-dark) 100%);color:#fff;padding:54px 0 46px}
+.eyebrow{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:.76rem;padding:5px 12px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.hero h1{font-size:2rem;margin-top:14px;max-width:20ch;color:#fff}
+.lead{font-size:1.08rem;color:#dfeaef;max-width:56ch;margin:12px 0 0}
+.rating-line{margin:20px 0 0}
+.rating-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 15px;text-decoration:none;color:#fff;font-size:.95rem;min-height:44px}
+.rating-chip b{color:#f4c3bc}
+.stars{color:#f4c3bc;letter-spacing:1px}
+
+.ph{color:var(--accent-dark);font-style:italic;font-weight:600}
+
+.treat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+.treat-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.treat-card h3{font-size:1.1rem;color:var(--blue-dark);margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--bg2);border:1px solid var(--line);color:var(--blue-dark);border-radius:999px;padding:9px 14px;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer;min-height:44px}
+.chip:hover,.chip:focus{background:#b5271b;color:#fff;border-color:#b5271b;outline:2px solid transparent}
+.chip:focus-visible{outline:3px solid var(--blue-dark)}
+
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:28px}
+.hours-list{list-style:none;margin:0;padding:0}
+.hours-list li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.addr{font-size:1.1rem;margin:0 0 4px}
+
+.bookform{max-width:720px}
+.bookform .row{display:flex;gap:14px;flex-wrap:wrap}
+.bookform label{display:flex;flex-direction:column;gap:5px;font-weight:700;color:var(--blue-dark);margin-bottom:14px;flex:1 1 170px;font-size:.92rem}
+.bookform label.check{flex-direction:row;align-items:flex-start;gap:9px;font-weight:600;color:var(--ink);font-size:.9rem}
+.bookform label.check input{width:auto;min-height:auto;margin-top:3px;flex:0 0 auto}
+.bookform input,.bookform select,.bookform textarea{font:inherit;padding:12px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);min-height:48px;width:100%}
+.bookform input:focus,.bookform select:focus,.bookform textarea:focus{outline:3px solid var(--accent);border-color:var(--accent)}
+.form-note{display:none;border-radius:9px;padding:12px 14px;margin:6px 0 10px;font-weight:600}
+.form-note.show{display:block}
+.form-note.ok{background:#fff;color:var(--ink);border-left:5px solid var(--accent)}
+.form-note.err{background:#fdecea;color:#b4231a;border-left:5px solid #e0624f}
+.form-summary{background:#fff;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:9px;padding:14px 16px;margin:8px 0}
+.form-summary h3{margin:0 0 8px;font-size:1.1rem;color:var(--blue-dark)}
+.sum-dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0}
+.sum-dl dt{font-weight:700;color:var(--muted)}
+.sum-dl dd{margin:0}
+.muted{color:var(--muted)}.small{font-size:.86rem}
+
+footer{background:var(--blue-dark);color:#dde8ed;padding:34px 0}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:22px}
+footer h4{color:#fff;font-size:1rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{padding:3px 0;color:#cbdae1}
+footer a{color:#f4c3bc}
+
+.demo-flag{position:fixed;left:0;right:0;bottom:56px;background:var(--blue-dark);color:#dde8ed;text-align:center;font-size:.72rem;padding:5px 10px;z-index:59;margin:0;border-top:1px solid rgba(255,255,255,.12)}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:1px;background:var(--line)}
+.callbar a{flex:1;text-align:center;padding:14px 4px;text-decoration:none;font-weight:700;color:#fff;min-height:56px;display:flex;align-items:center;justify-content:center;gap:5px;font-size:.92rem}
+.callbar .c1{background:var(--blue)}.callbar .c2{background:#b5271b}.callbar .c3{background:var(--blue-dark)}
+body{padding-bottom:112px}
+@media(min-width:821px){.callbar{display:none}.demo-flag{position:static;bottom:auto}body{padding-bottom:0}}
+
+/* --- v2: full-bleed photo hero --- */
+.hero{position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center;padding:0}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,42,52,.42),rgba(28,42,52,.82));z-index:1}
+.hero-inner{position:relative;z-index:2;width:100%;padding-top:48px;padding-bottom:44px}
+.foto-tag{margin:0;font-family:inherit;font-size:.7rem;font-weight:600;letter-spacing:.02em;padding:4px 10px;border-radius:999px;background:rgba(20,30,38,.72);color:#fff}
+.hero-tag{position:absolute;top:12px;right:14px;z-index:3}
+@media(min-width:821px){.hero{min-height:520px}}
+
+/* "Perché questa pagina" collapsible near footer */
+.why-wrap{padding:0 0 46px}
+.why{background:#fff;border:1px solid var(--line);border-radius:12px;padding:2px 16px}
+.why summary{cursor:pointer;font-weight:700;color:var(--blue-dark);padding:13px 0;min-height:44px;display:flex;align-items:center}
+.why p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+.why p:first-of-type{margin-top:4px}
+
+/* course section figure */
+.corsi-fig{position:relative;margin:20px 0 10px;border-radius:14px;overflow:hidden;max-width:560px}
+.corsi-fig img{display:block;width:100%;height:auto;border-radius:14px}
+.corsi-fig .foto-tag{position:absolute;top:10px;right:12px}
